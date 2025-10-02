@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Blinkit</div>
+        <input type="text" id="searchInput" placeholder="Search for products...">
+        <nav>
+            <ul id="categoryNav">
+                <!-- Categories will be injected here -->
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="loginBtn">Login</button>
+            <button id="cartBtn">Cart <span id="cartCount">0</span></button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <h1>Groceries delivered in minutes</h1>
+            <p>Order fresh groceries and essentials from Blinkit.</p>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories">
+            <h2>Shop by Category</h2>
+            <div class="category-list" id="categoryList">
+                <!-- Category cards injected by JS -->
+            </div>
+        </section>
+
+        <!-- Product Listings Section -->
+        <section id="products">
+            <h2 id="productsTitle">All Products</h2>
+            <div class="product-list" id="productList">
+                <!-- Product cards injected by JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="modalImg" src="" alt="">
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc"></p>
+            <div id="modalPrice"></div>
+            <button id="addToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
